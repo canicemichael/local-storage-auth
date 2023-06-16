@@ -3,17 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login cookies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Login localStorage</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Login</h1>
-    <form id="login-form">
-      <input type="email" name="email" placeholder="Email" required />
-      <input type="password" name="password" placeholder="Password" required />
-      <button type="submit">Login</button>
-      <p>check the console for more info</p>
-    </form>
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-    <script src="login.js" type="module"></script>
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>Lotus Team</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="./home.html">Team Members</a></li>
+          <li><a class="nav-link scrollto" href="./signup.html">Register</a></li>
+          <li><a class="getstarted scrollto" href="./login.html">Sign In</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+    <section class="h-100 gradient-form" style="background-color: #eee;">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-xl-10">
+            <div class="card rounded-3 text-black">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <div class="card-body p-md-5 mx-md-4">
+    
+                    <div class="text-center">
+                      <img src="./assets/img/purpleflower.jpg"
+                        style="width: 185px;" alt="logo">
+                      <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
+                    </div>
+    
+                    <form id="login-form">
+                      <p>Please login to your account</p>
+    
+                      <div class="form-outline mb-4">
+                        <input type="email" name="email" id="form2Example11" class="form-control"
+                          placeholder="Email address" />
+                        <label class="form-label" for="form2Example11">Email</label>
+                      </div>
+    
+                      <div class="form-outline mb-4">
+                        <input type="password" name="password" placeholder="password" id="form2Example22" class="form-control" />
+                        <label class="form-label" for="form2Example22">Password</label>
+                      </div>
+    
+                      <div class="text-center pt-1 mb-5 pb-1">
+                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Log
+                          in</button>
+                        <a class="text-muted" href="#!">Forgot password?</a>
+                      </div>
+    
+                      <div class="d-flex align-items-center justify-content-center pb-4">
+                        <p class="mb-0 me-2">Don't have an account?</p>
+                        <button type="button" class="btn btn-outline-danger"><a style="text-decoration: none; color: black;" href="./signup.html">Create new</a></button>
+                      </div>
+    
+                    </form>
+    
+                  </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center gradient-custom-2 bg-danger">
+                  <div class="text-white bg-danger px-3 py-4 p-md-5 mx-md-4">
+                    <h4 class="mb-4">We are more than just a company</h4>
+                    <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/js/login.js" type="module"></script>
   </body>
 </html>
