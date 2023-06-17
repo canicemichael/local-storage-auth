@@ -11,19 +11,19 @@ if (token) {
   console.log("Token not found");
 }
 
-fetch("/api/data", {
-  headers: {
-    Authorization: `Bearer ${token}`,
-  },
-})
-  .then((response) => {
-    response.json();
-  })
-  .then((data) => {
-    // Handle the response data
-    console.log("data");
-  })
-  .catch((error) => {
-    // Handle any errors
-    console.error(error);
-  });
+// async function getRes() {
+//   try {
+//     const response = await fetch("/api/data", {
+//       headers: {
+//         Authorization: `Bearer ${token}`,
+//       },
+//     });
+
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
+// getRes();

@@ -25,7 +25,7 @@ loginForm.addEventListener("submit", async (event) => {
     localStorage.setItem("token", token);
 
     if (token) {
-      window.location.href = "/home"; //call a server endpoint that renders html page
+      window.location.href = "/index.html"; //call a server endpoint that renders html page
     } else {
       window.location.href = "/login.html";
     }

@@ -16,8 +16,8 @@ app.use(helmet());
 
 connectDb();
 
-// app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static("public", { type: "module" }));
+app.use(express.static("public"));
+// app.use(express.static("public", { type: "module" }));
 app.use("/auth", userRoute);
 
 app.get("/home", (req, res) => {
@@ -35,24 +35,33 @@ app.get("/api/data", async (req, res) => {
     console.log("token ", token);
   }
 
-  //   console.log(typeof authHeader);
-
-  //   const headers = req.getHeaders();
-
-  //   console.log(headers);
-
-  res.json({ message: "API route respoonse" });
+  if (token) {
+    res.sendFile(path.join(__dirname, "public/home.html"));
+  }
 });
 
-app.get('/dashboardInit', (req, res) => {
-    console.log('came to dashboardInit');
-    res.sendFile(path.join(__dirname, "public/dashboard.html"));
-})
+app.get("/dashboardInit", (req, res) => {
+  console.log("came to dashboardInit");
+  res.sendFile(path.join(__dirname, "public/dashboard.html"));
+});
 
 app.get("/dashboard", authenticateToken, (req, res) => {
   // Access the authenticated user via req.user
   const userId = req.user.userId;
-  console.log('userId ', userId);
+  console.log("userId ", userId);
+  // Fetch user data or perform any other action
+  res.json({ message: `Welcome to the dashboard, User ID: ${userId}` });
+});
+
+app.get("/teamMemberInit", (req, res) => {
+  console.log("came to teamMemberInit");
+  res.sendFile(path.join(__dirname, "public/team-member.html"));
+});
+
+app.get("/teamMember", authenticateToken, (req, res) => {
+  // Access the authenticated user via req.user
+  const userId = req.user.userId;
+  console.log("userId ", userId);
   // Fetch user data or perform any other action
   res.json({ message: `Welcome to the dashboard, User ID: ${userId}` });
 });
