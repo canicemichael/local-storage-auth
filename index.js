@@ -29,3 +29,7 @@ app.listen(PORT, () => {
 // I'm trying to connect ejs to work as how express.static file worked
 // will go and research on it
 // will try and connect express session and cookies in this app
+
+// password reset
+// logout
+// api documentation
