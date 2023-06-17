@@ -54,11 +54,11 @@ Here I will divide this section into 3: Sign-up, login and access protected rout
 
 ## Sign-Up:
 
-A user has to provide email and password to sign up, the details are passed to the server and through mongoose are stored in the MongoDB database. They are checked prior storing if they exist, if so an error is thrown. While making sure the emal and password are validated in html and userSchema model.
+A user has to provide email and password to sign up, the details are passed to the server, the password is hashed with bcrypt and through mongoose the password and email are stored in the MongoDB database. They are checked prior storing if they exist, if so an error is thrown. While making sure the emal and password are validated in html and userSchema model.
 
 ## Login:
 
-A user has to provide email and password to login, when the data gets to the server side, they are checked if they exist, if so a jsonwebtoken is generated and then user is redirected to the home page while storing the token in the localStorage of the client side.
+A user has to provide email and password to login, when the data gets to the server side, they are checked if they exist, if so, the password is compared with the one gottenn from database then jsonwebtoken is used to sign the user and a token is generated and then user is redirected to the home page while storing the token in the localStorage of the client side.
 
 ## Access Protected Route:
 
