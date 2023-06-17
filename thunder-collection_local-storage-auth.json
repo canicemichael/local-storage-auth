@@ -1,0 +1,103 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "local-storage-auth",
+    "dateExported": "2023-06-17T13:11:00.123Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "80516b18-e864-495c-ba89-35b5fe7eb5cf",
+            "colId": "013994ce-1f31-4897-9391-ec8740129dbe",
+            "containerId": "",
+            "name": "Sign up",
+            "url": "http://localhost:3000/auth/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-06-17T12:57:08.205Z",
+            "modified": "2023-06-17T13:00:51.824Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"munachi@gmail.com\",\n  \"password\": \"munachi\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8fb260b4-8afc-4a40-ae59-b753f10eff1a",
+            "colId": "013994ce-1f31-4897-9391-ec8740129dbe",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3000/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-06-17T13:01:11.648Z",
+            "modified": "2023-06-17T13:01:55.075Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"munachi@gmail.com\",\n  \"password\": \"munachi\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "31566c37-3186-4889-8751-7cad0ecf4858",
+            "colId": "013994ce-1f31-4897-9391-ec8740129dbe",
+            "containerId": "",
+            "name": "test home route",
+            "url": "http://localhost:3000/home",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-06-17T13:02:54.416Z",
+            "modified": "2023-06-17T13:05:34.137Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b40b9ef9-44f0-494c-92e5-d88fe26d0c86",
+            "colId": "013994ce-1f31-4897-9391-ec8740129dbe",
+            "containerId": "",
+            "name": "test /api/data",
+            "url": "http://localhost:3000/api/data",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-06-17T13:06:08.744Z",
+            "modified": "2023-06-17T13:06:39.632Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f697f0af-0e12-4c4f-a5af-e74f4b84fe98",
+            "colId": "013994ce-1f31-4897-9391-ec8740129dbe",
+            "containerId": "",
+            "name": "fetch client-side team member page",
+            "url": "http://localhost:3000/teamMemberInit",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-06-17T13:08:20.543Z",
+            "modified": "2023-06-17T13:08:49.355Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cf9e673a-b03c-40d4-8815-284ddaf8f9f4",
+            "colId": "013994ce-1f31-4897-9391-ec8740129dbe",
+            "containerId": "",
+            "name": "team member route",
+            "url": "http://localhost:3000/teamMember",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-06-17T13:10:20.250Z",
+            "modified": "2023-06-17T13:10:39.900Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
