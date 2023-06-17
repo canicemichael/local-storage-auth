@@ -42,8 +42,8 @@ Provide instructions on how to install and set up the project on a local develop
 
 # Usage
 ```Download the zip-code of this project
-install all dependencies by running in the terminal
-``` yarn install or npm install
+install all dependencies by running in the terminal```
+```yarn install or npm install
 create a .env file in the root folder, give values to mongodbUri and SECRET keys
 
 then start the server by running
