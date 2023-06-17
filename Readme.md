@@ -52,7 +52,7 @@ create a .env file in the root folder, give values to mongodbUri and SECRET keys
  yarn run dev
  ```
 
-Explain how to use the project and any important considerations or guidelines for running it. Include example code snippets or command line instructions if necessary.
+Visit http://localhost:3000 to see the home page
 
 # API Documentation
 * Check my thunder-collection_local-storage-auth file
