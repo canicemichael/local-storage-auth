@@ -1,8 +1,8 @@
-THE LOTUS TEAM
+# THE LOTUS TEAM
 
 The lotus team is a project to showcase the implementation of authentication and authorization of users using jsonwebtoken, localStorage, cookiePaser, etc.
 
-Table of Contents
+# Table of Contents
 
 - Project Description
 - Features
