@@ -41,14 +41,14 @@ The lotus team is a fictional team that showcases all their portfolio in their h
 Provide instructions on how to install and set up the project on a local development environment. Include any necessary prerequisites, dependencies, or configuration steps.
 
 # Usage
-```Download the zip-code of this project
+Download the zip-code of this project
 install all dependencies by running in the terminal```
 ```javascript
 yarn install or npm install
 create a .env file in the root folder, give values to mongodbUri and SECRET keys
 
 then start the server by running
-``` yarn run dev
+```yarn run dev
 
 Explain how to use the project and any important considerations or guidelines for running it. Include example code snippets or command line instructions if necessary.
 
