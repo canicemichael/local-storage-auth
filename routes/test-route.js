@@ -5,7 +5,7 @@ const path = require("path");
 router.get("/home", (req, res) => {
   // serve the home.html file
   console.log("came to home");
-  res.sendFile(path.join(__dirname, "public/home.html"));
+  res.sendFile(path.join(__dirname, "../public/home.html"));
 });
 
 router.get("/api/data", async (req, res) => {
@@ -18,7 +18,7 @@ router.get("/api/data", async (req, res) => {
   }
 
   if (token) {
-    res.sendFile(path.join(__dirname, "public/home.html"));
+    res.sendFile(path.join(__dirname, "../public/home.html"));
   }
 });
 

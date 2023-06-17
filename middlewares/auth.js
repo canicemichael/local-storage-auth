@@ -11,7 +11,7 @@ const authenticateToken = (req, res, next) => {
   
       try {
         // Verify the token
-        const decoded = jwt.verify(token, 'secretKey');
+        const decoded = jwt.verify(token, process.env.SECRET);
   
         // Add the decoded token to the request object for further use
         req.user = decoded;

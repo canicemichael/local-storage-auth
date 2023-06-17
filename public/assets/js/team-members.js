@@ -23,7 +23,8 @@ async function getRes() {
     console.log(data);
 
     if (!token) {
-      window.location.href = "/index.html";
+      // redirect to signup page so they could join the team
+      window.location.href = "/signup.html";
     }
   } catch (error) {
     console.error(error);
