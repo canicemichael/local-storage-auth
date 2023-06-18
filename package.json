@@ -17,5 +17,8 @@
     "helmet": "^7.0.0",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.2.4"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
